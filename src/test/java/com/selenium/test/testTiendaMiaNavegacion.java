@@ -76,26 +76,20 @@ public class testTiendaMiaNavegacion {
 		////////////ingresa a mi cuenta
 		Utiles.reportes("Verificar que el boton mi cuenta exista");
 		Assert.assertTrue(homepage.validarBotonMiCuenta()," Buttton cuenta se vizualice");
-		Utiles.ThreadSleep2seg();
 		homepage.micuentaButton.click();
 		Utiles.reportes("Entrar Button rojo");
 		Assert.assertTrue(homepage.validarBotonIngresar1(),"Entrar");
 		homepage.entrarButton.click();
 		///////////login-ingresar
-		Thread.sleep(3000);
 		Utiles.reportes("Verificar que se permita loguear");
 		Assert.assertTrue(homepage.validarCorreo()," Label email se vizualice");
-		
 		homepage.ingresarCorreo("correoparapruebasautomatizadas@gmail.com");
-		
 		Utiles.reportes("Verificar que se permita ingresar password");
 		Assert.assertTrue(homepage.validarPassword()," Label password se vizualice");
-		Utiles.ThreadSleep2seg();
 		homepage.ingresarPassword("Testing.automation");
 		Utiles.ThreadSleep2seg();
 		Utiles.reportes("Verificar que el boton ingresar exista");
 		Assert.assertTrue(homepage.validarBotonIngresar2()," Buttton ingresar se vizualice");
-		
 		homepage.presionarBotonIngresar();
 		Utiles.ThreadSleep2seg();
 		/////////caja de busqueda
@@ -106,9 +100,7 @@ public class testTiendaMiaNavegacion {
 		homepage.ingresarCajadeBusqueda2("PlayStation 5 ");
 		Utiles.ThreadSleep2seg();
 		homepage.clickCajadeBusqueda2();
-		Utiles.threadSleep3seg();
 		
-		///////////Seleccion del producto en la tabla de productos
 		
 		
 	

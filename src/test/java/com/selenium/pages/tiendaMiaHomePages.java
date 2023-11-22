@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-import Metodosutiles.Utiles;
+
 
 public class tiendaMiaHomePages {
 	WebDriver driver;
@@ -424,13 +424,15 @@ public void ingresarComprar() {
 	}
 	
 	
-	
 
 ///////////////////////////////////////////////////////////////////////////
 
 		
 	
-	   public void seleccionarOpcion(String opcion) {
+	   
+
+
+	public void seleccionarOpcion(String opcion) {
 	        // Hacer clic en el elemento principal para activar el menú desplegable
 	        ordenarPor.click();
 
