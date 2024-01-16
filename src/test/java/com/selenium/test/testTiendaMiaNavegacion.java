@@ -61,7 +61,7 @@ public class testTiendaMiaNavegacion {
 		Utiles.reportes("Verificar que el button Ofertas exista");
 		Assert.assertTrue(homepage.validarOfertas()," Validar que Button Ofertas se vizualice");
 		homepage.Ofertas.click();
-		Utiles.ThreadSleep2seg();
+		Utiles.threadSleep3seg();
 		driver.navigate().back();
 		////////entra a como comprar
 		Utiles.reportes("Verificar que el button Como comprar exista");
